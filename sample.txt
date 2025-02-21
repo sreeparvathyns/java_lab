@@ -1,0 +1,20 @@
+//nested class
+class Outer
+{
+	class inner
+	          {
+		public void show()
+		      {
+			System.out.println("in a nested class");
+		      }	
+		   }
+}
+
+class Main
+{
+     public static void main(String args[])
+     {
+     	Outer.Inner in=new Outer().new Inner();
+     	in.show();
+     }
+ }
