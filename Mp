@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+class Student {
+    String name;
+    int rollno;
+    String section;
+
+    // Constructor to initialize Student object
+    Student(String name, int rollno, String section) {
+        this.name = name;
+        this.rollno = rollno;
+        this.section = section;
+    }
+
+    // Method to print student details
+    public void printDetails() {
+        System.out.print("Student Details: ");
+        System.out.println(this.name + ", " + this.rollno + ", " + this.section);
+    }
+}
+
+class Mp {
+    public static void main(String[] args) {
+        // Creating an array of 3 Student objects
+        Student student[] = new Student[3];
+        
+        // Create Scanner object for input
+        Scanner sc = new Scanner(System.in);
+        
+        // Take input for each student
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Enter details for Student " + (i + 1) + ":");
+            System.out.print("Enter name: ");
+            String name = sc.nextLine();
+            System.out.print("Enter roll number: ");
+            int rollno = sc.nextInt();
+            sc.nextLine();  // consume the leftover newline character
+            System.out.print("Enter section: ");
+            String section = sc.nextLine();
+
+            // Creating a Student object and adding it to the array
+            student[i] = new Student(name, rollno, section);
+        }
+
+        // Displaying details of each student
+        for (int i = 0; i < 3; i++) {
+            student[i].printDetails();
+        }
+        
+        // Close the scanner object
+        sc.close();
+    }
+}
