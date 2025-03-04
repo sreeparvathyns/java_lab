@@ -1,0 +1,29 @@
+ class Student{
+ 	String name;
+ 	int rollno;
+ 	String section;
+ 	
+   Student(String name,int rollno,String section){
+	 	this.name=name;
+	 	this.rollno=rollno;
+	 	this.section=section;
+	 	}
+	 	public void printDetails(){
+	 	System.out.print("Student Details:");
+	 	System.out.println(this.name+","+this.rollno+","+this.section);
+	 	}
+	 	}
+  class Mprg{
+ 	public static void main(String[] args){
+ 	Student student1=new Student("Robin",2,"XII A1");
+ 	Student student2=new Student("Al Pacino",3,"XI A2");
+ 	Student student3=new Student("De Niro",4,"XI A1");
+ 
+ 	
+ 	printDetails();
+ 	student1.printDetails();
+ 	student2.printDetails();
+ 	student3.printDetails();
+ 	}
+ 	}
+ 
