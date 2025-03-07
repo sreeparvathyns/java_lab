@@ -1,0 +1,21 @@
+import java.util.*;
+class StringM
+{
+    public static void main (String args[])
+    {
+    String s1= new String("Hello i am Hello");
+    String s2= new String("Ciao");
+    int d=123;
+    System.out.println( "String 1: "+s1);
+    System.out.println("String 2: "+s2);
+    System.out.println("Length of string 1: "+s1.length());
+    System.out.println("Concatenation:"+s1.concat(s2)); //concatenates s1 with s2
+    System.out.println("Character Extraction of 2nd string (2nd char):"+s2.charAt(1)); 
+    System.out.println("SubString of String 1: "+s1.substring(0,3));
+    System.out.println("String Modification: "+s1.replace("Hello","Bonjour"));
+    System.out.println("To lowercase: "+s1.toLowerCase()+"\n To Uppercase:"+s2.toUpperCase());
+    System.out.println("String Comparison:"+s1.equals(s2));
+    System.out.println("Data Coversion:"+s1.valueOf(d));
+ 
+    }
+}
