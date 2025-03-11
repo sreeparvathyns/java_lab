@@ -1,0 +1,53 @@
+import java.util.*;
+class SortMain
+{
+public static void main(String[] args)
+{
+    int ch;
+    int i,j,n;
+    String t;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Read no of strings:");
+    n=sc.nextInt();
+    String str[]=new String[n];
+    System.out.println("Read strings:");
+    for(i=0;i<n;i++)
+    {
+        str[i]=sc.next();
+
+    }
+    while(true)
+    {
+      System.out.println("Enter the choice \n1.Using Sort\n 2.Using CompareTo \n 3.Return");
+      ch=sc.nextInt();
+      switch(ch)
+      {
+        case 1: Arrays.sort(str);
+                System.out.println(Arrays.toString(str));
+                break;
+        case 2: for(i=0;i<n;i++)
+        {
+          for(j=i+1;j<n;j++)
+          {
+
+            if (str[i].compareTo(str[j])>0)
+            {
+                t=str[i];
+                str[i]=str[j];
+                str[j]=t;
+            }
+        }
+      }
+    
+      for(i=0;i<n;i++)
+      {
+        System.out.println(str[i]);
+      }
+             break;
+    case 3:return;
+        default:System.out.println("invalid");
+    }
+}
+
+}
+}
