@@ -1,0 +1,37 @@
+developer@ccfl6-pc54:~/OOP$ javac ShapeTest.java
+developer@ccfl6-pc54:~/OOP$ java ShapeTest
+
+ MENU
+||||||||||||||||||||||||||||||||||||||||||||||
+1.Calculate the area and perimeter of Circle
+2.Calculate the area and perimeter of Rectangle
+3.Exit
+Enter your choice : 
+1
+Enter the radius of the circle : 
+5
+The area of the circle is : 78.53981633974483
+The perimeter of the circle is : 31.41592653589793
+
+ MENU
+||||||||||||||||||||||||||||||||||||||||||||||
+1.Calculate the area and perimeter of Circle
+2.Calculate the area and perimeter of Rectangle
+3.Exit
+Enter your choice : 
+2
+Enter the length of the rectangle : 
+4
+Enter the breadth of the rectangle : 
+6
+The area of the rectangle is : 24.0
+The perimeter of the rectangle is : 20.0
+
+ MENU
+||||||||||||||||||||||||||||||||||||||||||||||
+1.Calculate the area and perimeter of Circle
+2.Calculate the area and perimeter of Rectangle
+3.Exit
+Enter your choice : 
+3
+Exiting the program.....
