@@ -1,0 +1,12 @@
+developer@ccfl6-pc54:~/OOP$ javac arraylist.java
+developer@ccfl6-pc54:~/OOP$ java arraylist
+The 2nd person = Sree
+Updated List: [Jane, michu, Stewie, Kylie]
+After removing [michu, Stewie, Kylie]
+false
+Size of array =3
+michu
+Stewie
+Kylie
+After sorting =[Kylie, Stewie, michu]
+After clearing =[]
